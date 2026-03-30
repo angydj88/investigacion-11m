@@ -1,7 +1,7 @@
 // ===== APP.JS — Main application logic =====
 
 const App = {
-  basePath: '..',
+  basePath: window.location.hostname === 'localhost' || window.location.protocol === 'file:' ? '..' : '.',
   currentSection: 'inicio',
   currentArticle: null,
   mdCache: {},
