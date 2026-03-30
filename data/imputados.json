@@ -1,0 +1,66 @@
+{
+  "proceso": "Juicio 11-M — Audiencia Nacional, Sección Segunda de la Sala de lo Penal",
+  "sentencia": "65/2007",
+  "fecha_sentencia": "2007-10-31",
+  "presidente_tribunal": "Javier Gómez Bermúdez",
+  "inicio_juicio_oral": "2007-02-15",
+  "fin_juicio_oral": "2007-07-02",
+  "sesiones": 57,
+  "paginas_sentencia": 721,
+  "total_acusados": 28,
+  "total_condenados": 21,
+  "total_absueltos": 7,
+  "absueltos_posteriores_TS": 3,
+  "condenados_principales": [
+    {
+      "nombre": "Jamal Zougam",
+      "nacionalidad": "Marroquí",
+      "condena_anos": 42922,
+      "delitos": "Autor material — colocó artefacto explosivo en tren de Santa Eugenia",
+      "notas": "Comerciante marroquí que suministró los teléfonos móviles usados como detonadores"
+    },
+    {
+      "nombre": "Otman el Gnaoui",
+      "nacionalidad": "Marroquí",
+      "condena_anos": 42922,
+      "delitos": "Autor material del atentado",
+      "notas": "Condenado junto a Zougam como autor directo"
+    },
+    {
+      "nombre": "José Emilio Suárez Trashorras",
+      "nacionalidad": "Española",
+      "condena_anos": 34715,
+      "delitos": "Cooperador necesario — suministro de explosivos",
+      "notas": "Minero español que proporcionó la Goma-2 ECO de minas de Asturias a cambio de hachís"
+    }
+  ],
+  "otros_condenados": "18 personas más condenadas por diversos grados de participación y colaboración",
+  "suicidas_leganes": {
+    "fecha": "2004-04-03",
+    "lugar": "Calle Carmen Martín Gaite, Leganés (Madrid)",
+    "hora_explosion": "21:03",
+    "nombres": [
+      "Serhane ben Abdelmajid Fakhet (El Tunecino) — considerado líder ideológico",
+      "Jamal Ahmidan (El Chino) — figura central en financiación y ejecución",
+      "Abdennabi Kounjaa",
+      "Asri Rifaat Anouar",
+      "Mohamed Oulad Akcha",
+      "Rachid Oulad Akcha",
+      "Allekema Lamari"
+    ],
+    "policia_fallecido": "Francisco Javier Torronteras (Subinspector del GEO)",
+    "notas": "Se inmolaron con Goma-2 ECO cuando el GEO inició el asalto. Constituían el núcleo central del comando."
+  },
+  "grupo_terrorista": {
+    "nombre_gtd": "Al-Qaida (atribuido)",
+    "tipo": "Célula yihadista autónoma",
+    "reivindicacion": "Abu Hafs al-Masri Brigades (e-mail al periódico Al-Qods al-Arabi)",
+    "motivo_declarado": "Represalia por la cooperación de España con EEUU en la Guerra de Irak",
+    "conexiones": ["Al-Qaida", "GICM (Grupo Islámico Combatiente Marroquí)"]
+  },
+  "fuentes": [
+    "Sentencia 65/2007 Audiencia Nacional",
+    "Sentencia Tribunal Supremo (casación, julio 2008)",
+    "Global Terrorism Database"
+  ]
+}

@@ -1,0 +1,140 @@
+[
+  {
+    "fecha": "2004-03-11",
+    "hora": "07:37",
+    "descripcion": "3 bombas explotan en el tren 21431 dentro de la estación de Atocha (vagones 3º, 4º y 6º). 34 muertos.",
+    "categoria": "atentado",
+    "ubicacion": "Estación de Atocha",
+    "fuente": "Sentencia AN 65/2007"
+  },
+  {
+    "fecha": "2004-03-11",
+    "hora": "07:38",
+    "descripcion": "2 bombas explotan en el tren 21435 en El Pozo del Tío Raimundo (vagones 4º y 5º). 65 muertos. El ataque más mortífero.",
+    "categoria": "atentado",
+    "ubicacion": "Estación El Pozo del Tío Raimundo",
+    "fuente": "Sentencia AN 65/2007"
+  },
+  {
+    "fecha": "2004-03-11",
+    "hora": "07:38",
+    "descripcion": "1 bomba explota en el tren 21713 en Santa Eugenia (vagón 4º). 14 muertos.",
+    "categoria": "atentado",
+    "ubicacion": "Estación Santa Eugenia",
+    "fuente": "Sentencia AN 65/2007"
+  },
+  {
+    "fecha": "2004-03-11",
+    "hora": "07:39",
+    "descripcion": "4 bombas explotan en el tren 17305 en calle Téllez, 500m antes de Atocha (vagones 1º, 4º y 6º). 63 muertos.",
+    "categoria": "atentado",
+    "ubicacion": "Calle Téllez (500m de Atocha)",
+    "fuente": "Sentencia AN 65/2007"
+  },
+  {
+    "fecha": "2004-03-11",
+    "hora": null,
+    "descripcion": "Policía desactiva 3 artefactos no detonados en los trenes (2 en Téllez, 1 en El Pozo).",
+    "categoria": "investigacion",
+    "fuente": "Sentencia AN 65/2007"
+  },
+  {
+    "fecha": "2004-03-11",
+    "hora": null,
+    "descripcion": "Hallazgo de furgoneta Renault Kangoo robada cerca de Alcalá de Henares con 7 detonadores y cinta con versículos coránicos.",
+    "categoria": "investigacion",
+    "fuente": "Sentencia AN / GTD"
+  },
+  {
+    "fecha": "2004-03-11",
+    "hora": null,
+    "descripcion": "El Gobierno de Aznar atribuye inicialmente el atentado a ETA.",
+    "categoria": "politico",
+    "fuente": "Medios de comunicación"
+  },
+  {
+    "fecha": "2004-03-11",
+    "hora": null,
+    "descripcion": "Abu Hafs al-Masri Brigades envía e-mail al periódico Al-Qods al-Arabi (Londres) reivindicando el atentado.",
+    "categoria": "investigacion",
+    "fuente": "GTD / Al-Qods al-Arabi"
+  },
+  {
+    "fecha": "2004-03-12",
+    "hora": null,
+    "descripcion": "Manifestaciones masivas en toda España contra el terrorismo. 11 millones de personas.",
+    "categoria": "politico",
+    "fuente": "Medios de comunicación"
+  },
+  {
+    "fecha": "2004-03-13",
+    "hora": null,
+    "descripcion": "Vídeo reivindicativo encontrado en una papelera cerca de la mezquita de la M-30 en Madrid.",
+    "categoria": "investigacion",
+    "fuente": "Sentencia AN"
+  },
+  {
+    "fecha": "2004-03-13",
+    "hora": null,
+    "descripcion": "Primeras detenciones: 5 personas arrestadas, entre ellas Jamal Zougam.",
+    "categoria": "investigacion",
+    "fuente": "Sentencia AN"
+  },
+  {
+    "fecha": "2004-03-14",
+    "hora": null,
+    "descripcion": "Elecciones generales — victoria del PSOE (José Luis Rodríguez Zapatero). Derrota del PP de Aznar/Rajoy.",
+    "categoria": "politico",
+    "fuente": "Junta Electoral Central"
+  },
+  {
+    "fecha": "2004-04-02",
+    "hora": null,
+    "descripcion": "Bomba encontrada en vía del AVE Madrid-Sevilla cerca de Mocejón (Toledo). Desactivada.",
+    "categoria": "investigacion",
+    "fuente": "Medios / GTD"
+  },
+  {
+    "fecha": "2004-04-03",
+    "hora": "21:03",
+    "descripcion": "7 terroristas se inmolan en piso de c/ Carmen Martín Gaite, Leganés, al ser rodeados por el GEO. Muere el subinspector Francisco Javier Torronteras.",
+    "categoria": "investigacion",
+    "ubicacion": "Leganés (Madrid)",
+    "fuente": "Sentencia AN / Medios"
+  },
+  {
+    "fecha": "2006-04-10",
+    "hora": null,
+    "descripcion": "Auto de procesamiento del Juzgado Central de Instrucción nº 6. 29 personas encausadas.",
+    "categoria": "judicial",
+    "fuente": "Audiencia Nacional"
+  },
+  {
+    "fecha": "2007-02-15",
+    "hora": null,
+    "descripcion": "Inicio del juicio oral en la Audiencia Nacional (pabellón en Casa de Campo, Madrid). 28 acusados.",
+    "categoria": "judicial",
+    "fuente": "Audiencia Nacional"
+  },
+  {
+    "fecha": "2007-07-02",
+    "hora": null,
+    "descripcion": "Fin del juicio oral tras 57 sesiones.",
+    "categoria": "judicial",
+    "fuente": "Audiencia Nacional"
+  },
+  {
+    "fecha": "2007-10-31",
+    "hora": null,
+    "descripcion": "Sentencia 65/2007 de la Audiencia Nacional. 21 condenados, 7 absueltos. Zougam y El Gnaoui: 42.922 años. Suárez Trashorras: 34.715 años.",
+    "categoria": "judicial",
+    "fuente": "Sentencia 65/2007"
+  },
+  {
+    "fecha": "2008-07-17",
+    "hora": null,
+    "descripcion": "Sentencia del Tribunal Supremo (casación). Revoca 4 condenas y 1 absolución.",
+    "categoria": "judicial",
+    "fuente": "Tribunal Supremo"
+  }
+]

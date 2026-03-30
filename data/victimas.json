@@ -1,0 +1,57 @@
+{
+  "evento": "Atentados del 11 de marzo de 2004",
+  "resumen": {
+    "fallecidos": 193,
+    "heridos": 1856,
+    "nota": "Datos agregados de la sentencia. 193 fallecidos (192 en los atentados + 1 GEO en Leganés). No se incluyen datos personales individuales."
+  },
+  "por_ubicacion": [
+    {
+      "lugar": "Estación de Atocha",
+      "tren": "21431",
+      "hora_explosion": "07:37",
+      "bombas_detonadas": 3,
+      "vagones_afectados": "3º, 4º y 6º",
+      "fallecidos": 34
+    },
+    {
+      "lugar": "Calle Téllez (500m de Atocha)",
+      "tren": "17305",
+      "hora_explosion": "07:39",
+      "bombas_detonadas": 4,
+      "vagones_afectados": "1º, 4º y 6º",
+      "fallecidos": 63
+    },
+    {
+      "lugar": "Estación de El Pozo del Tío Raimundo",
+      "tren": "21435",
+      "hora_explosion": "07:38",
+      "bombas_detonadas": 2,
+      "vagones_afectados": "4º y 5º",
+      "fallecidos": 65
+    },
+    {
+      "lugar": "Estación de Santa Eugenia",
+      "tren": "21713",
+      "hora_explosion": "07:38",
+      "bombas_detonadas": 1,
+      "vagones_afectados": "4º",
+      "fallecidos": 14
+    },
+    {
+      "lugar": "Hospitales (fallecidos posterior)",
+      "fallecidos": 16
+    }
+  ],
+  "total_artefactos": 13,
+  "artefactos_detonados": 10,
+  "artefactos_no_detonados": 3,
+  "danos_materiales_usd": 26400000,
+  "coste_ejecucion_usd": 120000,
+  "linea_cercanias": "C-2 (Guadalajara/Alcalá de Henares - Atocha)",
+  "fuentes": [
+    "Sentencia 65/2007 Audiencia Nacional",
+    "Global Terrorism Database (GTD)",
+    "Agence France Presse, febrero 2007"
+  ]
+}

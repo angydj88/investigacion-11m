@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Investigaci&oacute;n 11-M &mdash; Atentados del 11 de marzo de 2004</title>
+  <meta name="description" content="Base de conocimiento estructurada sobre los atentados del 11 de marzo de 2004 en Madrid. Timeline, an&aacute;lisis, documentos oficiales, datos de la Global Terrorism Database.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['IBM Plex Sans', 'system-ui', 'sans-serif'] },
+          colors: {
+            primary: '#0F172A',
+            secondary: '#334155',
+            accent: '#0369A1',
+            surface: '#FFFFFF',
+            danger: '#DC2626',
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="bg-slate-50 text-slate-950 font-sans antialiased">
+
+  <!-- HEADER -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-primary text-white shadow-lg">
+    <div class="max-w-screen-2xl mx-auto flex items-center justify-between px-4 md:px-6 h-16">
+      <div class="flex items-center gap-3">
+        <button id="menu-toggle" class="lg:hidden p-2 hover:bg-white/10 rounded-lg cursor-pointer transition-colors" aria-label="Abrir menu">
+          <i data-lucide="menu" class="w-5 h-5"></i>
+        </button>
+        <a href="#inicio" class="flex items-center gap-2 cursor-pointer">
+          <i data-lucide="file-search" class="w-6 h-6 text-sky-400"></i>
+          <div>
+            <h1 class="text-base font-bold leading-tight">Investigaci&oacute;n 11-M</h1>
+            <p class="text-xs text-slate-400 hidden sm:block">11 de marzo de 2004 &mdash; Madrid</p>
+          </div>
+        </a>
+      </div>
+      <nav class="hidden md:flex items-center gap-1" id="top-nav">
+        <a href="#inicio" class="nav-link px-3 py-1.5 text-sm rounded-md hover:bg-white/10 transition-colors cursor-pointer">Inicio</a>
+        <a href="#cronologia" class="nav-link px-3 py-1.5 text-sm rounded-md hover:bg-white/10 transition-colors cursor-pointer">Cronolog&iacute;a</a>
+        <a href="#analisis" class="nav-link px-3 py-1.5 text-sm rounded-md hover:bg-white/10 transition-colors cursor-pointer">An&aacute;lisis</a>
+        <a href="#documentos" class="nav-link px-3 py-1.5 text-sm rounded-md hover:bg-white/10 transition-colors cursor-pointer">Documentos</a>
+        <a href="#perfiles" class="nav-link px-3 py-1.5 text-sm rounded-md hover:bg-white/10 transition-colors cursor-pointer">Perfiles</a>
+        <a href="#mapas" class="nav-link px-3 py-1.5 text-sm rounded-md hover:bg-white/10 transition-colors cursor-pointer">Mapas</a>
+        <a href="#fuentes" class="nav-link px-3 py-1.5 text-sm rounded-md hover:bg-white/10 transition-colors cursor-pointer">Fuentes</a>
+        <a href="#datos" class="nav-link px-3 py-1.5 text-sm rounded-md hover:bg-white/10 transition-colors cursor-pointer">Datos GTD</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <button id="search-toggle" class="p-2 hover:bg-white/10 rounded-lg cursor-pointer transition-colors" aria-label="Buscar">
+          <i data-lucide="search" class="w-5 h-5"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Search bar -->
+    <div id="search-bar" class="hidden bg-primary border-t border-white/10">
+      <div class="max-w-screen-2xl mx-auto px-4 md:px-6 py-3">
+        <div class="relative">
+          <i data-lucide="search" class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400"></i>
+          <input type="text" id="search-input" placeholder="Buscar en la investigaci&oacute;n..." class="w-full bg-white/10 text-white placeholder-slate-400 pl-10 pr-4 py-2 rounded-lg border border-white/20 focus:outline-none focus:border-sky-400 text-sm">
+        </div>
+        <div id="search-results" class="mt-2 hidden"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SIDEBAR (mobile overlay + desktop fixed) -->
+  <div id="sidebar-overlay" class="fixed inset-0 bg-black/50 z-40 hidden lg:hidden" aria-hidden="true"></div>
+  <aside id="sidebar" class="fixed top-16 left-0 bottom-0 w-72 bg-white border-r border-slate-200 z-40 overflow-y-auto transform -translate-x-full lg:translate-x-0 transition-transform duration-200">
+    <div class="p-4">
+      <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3">Secciones</p>
+      <nav id="sidebar-nav" class="space-y-1">
+        <!-- Populated by app.js -->
+      </nav>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="lg:ml-72 pt-16 min-h-screen">
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="section-panel">
+      <div class="max-w-4xl mx-auto px-4 md:px-8 py-12 md:py-20">
+        <div class="text-center mb-12">
+          <p class="text-sm font-semibold text-accent uppercase tracking-wider mb-3">Base de conocimiento</p>
+          <h2 class="text-3xl md:text-5xl font-bold text-primary leading-tight mb-4">Atentados del 11 de marzo de 2004</h2>
+          <p class="text-lg text-secondary max-w-2xl mx-auto">Investigaci&oacute;n estructurada con datos de la Global Terrorism Database, sentencia de la Audiencia Nacional y fuentes oficiales verificadas.</p>
+        </div>
+
+        <!-- Key stats -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+          <div class="bg-white rounded-xl p-4 shadow-sm border border-slate-100 text-center">
+            <p class="text-3xl font-bold text-danger">192</p>
+            <p class="text-sm text-secondary mt-1">V&iacute;ctimas mortales</p>
+          </div>
+          <div class="bg-white rounded-xl p-4 shadow-sm border border-slate-100 text-center">
+            <p class="text-3xl font-bold text-primary">1.856</p>
+            <p class="text-sm text-secondary mt-1">Heridos</p>
+          </div>
+          <div class="bg-white rounded-xl p-4 shadow-sm border border-slate-100 text-center">
+            <p class="text-3xl font-bold text-primary">4</p>
+            <p class="text-sm text-secondary mt-1">Trenes atacados</p>
+          </div>
+          <div class="bg-white rounded-xl p-4 shadow-sm border border-slate-100 text-center">
+            <p class="text-3xl font-bold text-primary">10</p>
+            <p class="text-sm text-secondary mt-1">Bombas detonadas</p>
+          </div>
+        </div>
+
+        <!-- Trains summary table -->
+        <div class="bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden mb-12">
+          <div class="px-6 py-4 border-b border-slate-100">
+            <h3 class="font-semibold text-primary">Los 4 trenes &mdash; 11 de marzo de 2004</h3>
+          </div>
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm">
+              <thead class="bg-slate-50">
+                <tr>
+                  <th class="px-4 py-3 text-left font-semibold text-secondary">Ubicaci&oacute;n</th>
+                  <th class="px-4 py-3 text-left font-semibold text-secondary">Tren</th>
+                  <th class="px-4 py-3 text-center font-semibold text-secondary">Hora</th>
+                  <th class="px-4 py-3 text-center font-semibold text-secondary">Bombas</th>
+                  <th class="px-4 py-3 text-center font-semibold text-danger">Fallecidos</th>
+                </tr>
+              </thead>
+              <tbody id="trains-table-body">
+                <!-- Populated by JS from trenes.json -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Quick links -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <a href="#cronologia" class="group bg-white rounded-xl p-5 shadow-sm border border-slate-100 hover:border-accent hover:shadow-md transition-all cursor-pointer">
+            <div class="flex items-center gap-3 mb-2">
+              <div class="w-10 h-10 rounded-lg bg-sky-50 flex items-center justify-center">
+                <i data-lucide="clock" class="w-5 h-5 text-accent"></i>
+              </div>
+              <h3 class="font-semibold text-primary group-hover:text-accent transition-colors">Cronolog&iacute;a</h3>
+            </div>
+            <p class="text-sm text-secondary">Timeline interactivo desde 2001 hasta 2008. Minuto a minuto del 11-M.</p>
+          </a>
+          <a href="#analisis/controversias_irregularidades" class="group bg-white rounded-xl p-5 shadow-sm border border-red-100 hover:border-danger hover:shadow-md transition-all cursor-pointer">
+            <div class="flex items-center gap-3 mb-2">
+              <div class="w-10 h-10 rounded-lg bg-red-50 flex items-center justify-center">
+                <i data-lucide="alert-triangle" class="w-5 h-5 text-danger"></i>
+              </div>
+              <h3 class="font-semibold text-primary group-hover:text-danger transition-colors">Controversias</h3>
+            </div>
+            <p class="text-sm text-secondary">13 irregularidades documentadas. Confidentes, destrucci&oacute;n de pruebas, mochila de Vallecas.</p>
+          </a>
+          <a href="#datos" class="group bg-white rounded-xl p-5 shadow-sm border border-slate-100 hover:border-accent hover:shadow-md transition-all cursor-pointer">
+            <div class="flex items-center gap-3 mb-2">
+              <div class="w-10 h-10 rounded-lg bg-sky-50 flex items-center justify-center">
+                <i data-lucide="database" class="w-5 h-5 text-accent"></i>
+              </div>
+              <h3 class="font-semibold text-primary group-hover:text-accent transition-colors">Datos GTD</h3>
+            </div>
+            <p class="text-sm text-secondary">6 registros de la Global Terrorism Database. Tablas interactivas con filtros.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE SECTION -->
+    <section id="cronologia" class="section-panel hidden">
+      <div class="max-w-4xl mx-auto px-4 md:px-8 py-8">
+        <h2 class="text-2xl font-bold text-primary mb-2">Cronolog&iacute;a</h2>
+        <p class="text-secondary mb-6">Timeline interactivo de los atentados del 11-M y la investigaci&oacute;n posterior.</p>
+        <!-- Timeline filters -->
+        <div class="flex flex-wrap gap-2 mb-6">
+          <button class="timeline-filter active px-3 py-1.5 text-xs font-medium rounded-full cursor-pointer transition-colors" data-category="all">Todos</button>
+          <button class="timeline-filter px-3 py-1.5 text-xs font-medium rounded-full cursor-pointer transition-colors" data-category="atentado">Atentado</button>
+          <button class="timeline-filter px-3 py-1.5 text-xs font-medium rounded-full cursor-pointer transition-colors" data-category="investigacion">Investigaci&oacute;n</button>
+          <button class="timeline-filter px-3 py-1.5 text-xs font-medium rounded-full cursor-pointer transition-colors" data-category="politico">Pol&iacute;tico</button>
+          <button class="timeline-filter px-3 py-1.5 text-xs font-medium rounded-full cursor-pointer transition-colors" data-category="judicial">Judicial</button>
+        </div>
+        <!-- Timeline container -->
+        <div id="timeline-container" class="mb-10">
+          <!-- Populated by timeline.js -->
+        </div>
+        <!-- Sub-navigation for timeline articles -->
+        <div class="border-t border-slate-200 pt-6">
+          <h3 class="text-lg font-semibold text-primary mb-4">Art&iacute;culos de la cronolog&iacute;a</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3" id="cronologia-articles">
+          </div>
+        </div>
+        <!-- Article content area -->
+        <div id="cronologia-content" class="mt-8"></div>
+      </div>
+    </section>
+
+    <!-- ANALYSIS SECTION -->
+    <section id="analisis" class="section-panel hidden">
+      <div class="max-w-4xl mx-auto px-4 md:px-8 py-8">
+        <h2 class="text-2xl font-bold text-primary mb-2">An&aacute;lisis</h2>
+        <p class="text-secondary mb-6">Hechos probados, hip&oacute;tesis, an&aacute;lisis de explosivos, comunicaciones y controversias.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8" id="analisis-articles"></div>
+        <div id="analisis-content"></div>
+      </div>
+    </section>
+
+    <!-- DOCUMENTS SECTION -->
+    <section id="documentos" class="section-panel hidden">
+      <div class="max-w-4xl mx-auto px-4 md:px-8 py-8">
+        <h2 class="text-2xl font-bold text-primary mb-2">Documentos oficiales</h2>
+        <p class="text-secondary mb-6">Sentencia, comisi&oacute;n de investigaci&oacute;n, informes policiales e &iacute;ndice de documentos.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8" id="documentos-articles"></div>
+        <div id="documentos-content"></div>
+      </div>
+    </section>
+
+    <!-- PROFILES SECTION -->
+    <section id="perfiles" class="section-panel hidden">
+      <div class="max-w-4xl mx-auto px-4 md:px-8 py-8">
+        <h2 class="text-2xl font-bold text-primary mb-2">Perfiles</h2>
+        <p class="text-secondary mb-6">Autores materiales, red log&iacute;stica y organizaciones vinculadas.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8" id="perfiles-articles"></div>
+        <div id="perfiles-content"></div>
+      </div>
+    </section>
+
+    <!-- MAPS SECTION -->
+    <section id="mapas" class="section-panel hidden">
+      <div class="max-w-4xl mx-auto px-4 md:px-8 py-8">
+        <h2 class="text-2xl font-bold text-primary mb-2">Mapas y ubicaciones</h2>
+        <p class="text-secondary mb-6">Ubicaciones de los atentados, pisos francos y Legan&eacute;s.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8" id="mapas-articles"></div>
+        <div id="mapas-content"></div>
+      </div>
+    </section>
+
+    <!-- SOURCES SECTION -->
+    <section id="fuentes" class="section-panel hidden">
+      <div class="max-w-4xl mx-auto px-4 md:px-8 py-8">
+        <h2 class="text-2xl font-bold text-primary mb-2">Fuentes</h2>
+        <p class="text-secondary mb-6">Fuentes oficiales, period&iacute;sticas, bibliograf&iacute;a y recursos audiovisuales.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8" id="fuentes-articles"></div>
+        <div id="fuentes-content"></div>
+      </div>
+    </section>
+
+    <!-- DATA SECTION -->
+    <section id="datos" class="section-panel hidden">
+      <div class="max-w-5xl mx-auto px-4 md:px-8 py-8">
+        <h2 class="text-2xl font-bold text-primary mb-2">Datos de la Global Terrorism Database</h2>
+        <p class="text-secondary mb-6">6 registros originales extra&iacute;dos de la GTD (START, Universidad de Maryland). Datos cuantitativos de los atentados.</p>
+        <!-- Data tabs -->
+        <div class="flex flex-wrap gap-2 mb-6 border-b border-slate-200 pb-3">
+          <button class="data-tab active px-4 py-2 text-sm font-medium rounded-t-lg cursor-pointer transition-colors" data-table="gtd">Registros GTD (11-M)</button>
+          <button class="data-tab px-4 py-2 text-sm font-medium rounded-t-lg cursor-pointer transition-colors" data-table="victimas">V&iacute;ctimas</button>
+          <button class="data-tab px-4 py-2 text-sm font-medium rounded-t-lg cursor-pointer transition-colors" data-table="imputados">Imputados</button>
+          <button class="data-tab px-4 py-2 text-sm font-medium rounded-t-lg cursor-pointer transition-colors" data-table="spain2004">Espa&ntilde;a 2004 (otros)</button>
+        </div>
+        <!-- Filter -->
+        <div class="mb-4">
+          <div class="relative">
+            <i data-lucide="filter" class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400"></i>
+            <input type="text" id="data-filter" placeholder="Filtrar datos..." class="w-full sm:w-80 pl-10 pr-4 py-2 border border-slate-200 rounded-lg text-sm focus:outline-none focus:border-accent">
+          </div>
+        </div>
+        <!-- Data tables container -->
+        <div id="data-tables-container" class="bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden">
+          <!-- Populated by data-tables.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-200 bg-white mt-12">
+      <div class="max-w-4xl mx-auto px-4 md:px-8 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm text-secondary">
+          <div>
+            <h4 class="font-semibold text-primary mb-2">Metodolog&iacute;a</h4>
+            <p>Fuentes exclusivamente p&uacute;blicas y oficiales: sentencias judiciales, informes parlamentarios, GTD (Universidad de Maryland), publicaciones acad&eacute;micas y medios de referencia.</p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-primary mb-2">Datos</h4>
+            <p>Base de datos: Global Terrorism Database (GTD), START, Universidad de Maryland. 6 registros del 11-M + 25 eventos adicionales en Espa&ntilde;a 2004.</p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-primary mb-2">Aviso</h4>
+            <p>Este proyecto es de car&aacute;cter investigativo y documental. Se presentan diversas fuentes y perspectivas para que el lector forme su propio criterio.</p>
+          </div>
+        </div>
+        <div class="mt-6 pt-6 border-t border-slate-100 text-center text-xs text-slate-400">
+          Investigaci&oacute;n 11-M &mdash; Proyecto de documentaci&oacute;n de acceso p&uacute;blico &mdash; 2026
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Scripts -->
+  <script src="js/app.js"></script>
+  <script src="js/timeline.js"></script>
+  <script src="js/data-tables.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      lucide.createIcons();
+      App.init();
+    });
+  </script>
+</body>
+</html>

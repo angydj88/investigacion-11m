@@ -1,0 +1,75 @@
+{
+  "fecha": "2004-03-11",
+  "linea": "Cercanías Madrid — Línea C-2 (Guadalajara/Alcalá de Henares - Atocha)",
+  "trenes": [
+    {
+      "id": 1,
+      "numero_tren": "21431",
+      "origen": "Alcalá de Henares",
+      "hora_salida": "07:01",
+      "ubicacion_explosion": "Estación de Atocha (dentro de la estación, vía 2)",
+      "hora_explosion": "07:37",
+      "bombas_detonadas": 3,
+      "bombas_no_detonadas": 0,
+      "vagones_afectados": "3º, 4º y 6º vagón",
+      "fallecidos": 34,
+      "notas": "Primera explosión de la serie. Tres bombas en mochilas detonadas por teléfonos móviles."
+    },
+    {
+      "id": 2,
+      "numero_tren": "21435",
+      "origen": "Alcalá de Henares",
+      "hora_salida": "07:10",
+      "ubicacion_explosion": "Estación de El Pozo del Tío Raimundo",
+      "hora_explosion": "07:38",
+      "bombas_detonadas": 2,
+      "bombas_no_detonadas": 1,
+      "vagones_afectados": "4º y 5º vagón",
+      "fallecidos": 65,
+      "notas": "El ataque más mortífero de los cuatro. Una bomba no detonada fue desactivada por la policía."
+    },
+    {
+      "id": 3,
+      "numero_tren": "21713",
+      "origen": "Guadalajara",
+      "hora_salida": null,
+      "ubicacion_explosion": "Estación de Santa Eugenia",
+      "hora_explosion": "07:38",
+      "bombas_detonadas": 1,
+      "bombas_no_detonadas": 0,
+      "vagones_afectados": "4º vagón",
+      "fallecidos": 14,
+      "notas": "Una sola bomba detonada en el cuarto vagón."
+    },
+    {
+      "id": 4,
+      "numero_tren": "17305",
+      "origen": "Alcalá de Henares",
+      "hora_salida": "07:14",
+      "ubicacion_explosion": "Calle Téllez, ~500m de Atocha",
+      "hora_explosion": "07:39",
+      "bombas_detonadas": 4,
+      "bombas_no_detonadas": 2,
+      "vagones_afectados": "1º, 4º y 6º vagón",
+      "fallecidos": 63,
+      "notas": "Cuatro bombas detonadas en plena vía. Dos artefactos no detonaron. Incluye la 'mochila de Vallecas' trasladada a comisaría."
+    }
+  ],
+  "resumen": {
+    "total_bombas_colocadas": 13,
+    "total_detonadas": 10,
+    "total_no_detonadas": 3,
+    "total_fallecidos_in_situ": 176,
+    "total_fallecidos_hospitales": 16,
+    "total_fallecidos": 192,
+    "total_heridos": 1856,
+    "tipo_explosivo": "Goma-2 ECO (dinamita)",
+    "sistema_detonacion": "Teléfonos móviles (alarma programada)",
+    "metodo_transporte": "Mochilas deportivas"
+  },
+  "fuentes": [
+    "Sentencia 65/2007 Audiencia Nacional",
+    "Global Terrorism Database (GTD) - registros 200403110001-200403110007",
+    "Wikipedia - Atentados del 11 de marzo de 2004"
+  ]
+}

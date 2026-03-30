@@ -1,0 +1,16 @@
+{
+  "nombre": "Terrorismo Investigación 11-M",
+  "descripcion": "Base de conocimiento estructurada sobre los atentados del 11 de marzo de 2004 en Madrid",
+  "fecha_inicio": "2026-03-30",
+  "autor": "Angel",
+  "version": "0.1.0",
+  "estado": "en_desarrollo",
+  "secciones": [
+    "timeline",
+    "documentos",
+    "analisis",
+    "perfiles",
+    "fuentes",
+    "mapas"
+  ]
+}
